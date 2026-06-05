@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Carnicería Ligua</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Carnicería Ligua</title>
 
 <style>
 
@@ -11,29 +12,51 @@ body{
 background:#111;
 font-family:Arial;
 color:white;
-text-align:center;
 margin:0;
-padding:20px;
+padding:15px;
 }
 
 h1{
+text-align:center;
 color:red;
+}
+
+.banner{
+background:red;
+padding:15px;
+border-radius:10px;
+text-align:center;
+margin-bottom:20px;
 }
 
 .producto{
 background:#222;
 padding:15px;
-margin:15px;
-border-radius:12px;
+margin:12px 0;
+border-radius:10px;
+}
+
+img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
 }
 
 button{
+
+width:100%;
+padding:12px;
+
 background:red;
+
 color:white;
+
 border:none;
-padding:12px 20px;
-font-size:18px;
+
 border-radius:10px;
+
+font-size:18px;
+
 }
 
 </style>
@@ -44,33 +67,102 @@ border-radius:10px;
 
 <h1>Carnicería Ligua</h1>
 
-<p>Nuestros productos</p>
+<p align="center">
+Av Eva Perón 641
+</p>
+
+<p align="center">
+
+Lunes a sábado<br>
+
+08:00–13:30 / 17:00–21:00<br>
+
+Domingo 08:00–13:00
+
+</p>
+
+<div class="banner">
+
+10% OFF efectivo o transferencia<br>
+
+1 cuota sin interés Visa / Mastercard
+
+</div>
+
+<img src="costilla.jpg">
 
 <div class="producto">
-<h2>Asado</h2>
-<p>$21000 kg</p>
-
-<button onclick="pedir('Asado')">
-Pedir
-</button>
+Costilla $21.000
+<button onclick="pedir('Costilla')">Pedir</button>
 </div>
 
 <div class="producto">
-<h2>Milanesas</h2>
-<p>$16000 kg</p>
-
-<button onclick="pedir('Milanesas')">
-Pedir
-</button>
+Vacío $21.000
+<button onclick="pedir('Vacío')">Pedir</button>
 </div>
 
 <div class="producto">
-<h2>Vacío</h2>
-<p>$21000 kg</p>
+Pulpas $21.000
+<button onclick="pedir('Pulpas')">Pedir</button>
+</div>
 
-<button onclick="pedir('Vacío')">
-Pedir
-</button>
+<div class="producto">
+Falda $15.500
+<button onclick="pedir('Falda')">Pedir</button>
+</div>
+
+<div class="producto">
+Sobre Asado $18.500
+<button onclick="pedir('Sobre Asado')">Pedir</button>
+</div>
+
+<div class="producto">
+Matambre $17.800
+<button onclick="pedir('Matambre')">Pedir</button>
+</div>
+
+<div class="producto">
+Chorizo Casero $11.000
+<button onclick="pedir('Chorizo Casero')">Pedir</button>
+</div>
+
+<div class="producto">
+Morcilla Ucrania $6.500
+<button onclick="pedir('Morcilla')">Pedir</button>
+</div>
+
+<img src="vaca.jpg">
+
+<div class="producto">
+Lomo $23.200
+<button onclick="pedir('Lomo')">Pedir</button>
+</div>
+
+<div class="producto">
+Molida $17.000
+<button onclick="pedir('Molida')">Pedir</button>
+</div>
+
+<div class="producto">
+Milanesa Carne $16.000
+<button onclick="pedir('Milanesa')">Pedir</button>
+</div>
+
+<img src="cerdo.jpg">
+
+<div class="producto">
+Costilla Cerdo $9.500
+<button onclick="pedir('Costilla Cerdo')">Pedir</button>
+</div>
+
+<div class="producto">
+Bondiola $9.000
+<button onclick="pedir('Bondiola')">Pedir</button>
+</div>
+
+<div class="producto">
+Paleta/Pernil $7.000
+<button onclick="pedir('Paleta')">Pedir</button>
 </div>
 
 <script>
@@ -78,7 +170,7 @@ Pedir
 function pedir(producto){
 
 window.location.href=
-"https://wa.me/1564284670?text=Hola quiero pedir "+producto
+"https://wa.me/1164284670?text=Hola quiero pedir "+producto
 
 }
 
