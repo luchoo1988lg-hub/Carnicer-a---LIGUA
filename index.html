@@ -2,33 +2,88 @@
 <html>
 <head>
 <title>Carnicería Ligua</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 body{
-font-family:Arial;
-text-align:center;
 background:#111;
+font-family:Arial;
 color:white;
-padding:40px;
+text-align:center;
+margin:0;
+padding:20px;
 }
-h1{color:red;}
-button{
+
+h1{
+color:red;
+}
+
+.producto{
+background:#222;
 padding:15px;
-font-size:20px;
-border:none;
+margin:15px;
+border-radius:12px;
+}
+
+button{
 background:red;
 color:white;
+border:none;
+padding:12px 20px;
+font-size:18px;
 border-radius:10px;
 }
+
 </style>
+
 </head>
+
 <body>
 
 <h1>Carnicería Ligua</h1>
 
-<p>Bienvenidos</p>
+<p>Nuestros productos</p>
 
-<button>Hacer Pedido</button>
+<div class="producto">
+<h2>Asado</h2>
+<p>$8500 kg</p>
+
+<button onclick="pedir('Asado')">
+Pedir
+</button>
+</div>
+
+<div class="producto">
+<h2>Milanesas</h2>
+<p>$7800 kg</p>
+
+<button onclick="pedir('Milanesas')">
+Pedir
+</button>
+</div>
+
+<div class="producto">
+<h2>Vacío</h2>
+<p>$9200 kg</p>
+
+<button onclick="pedir('Vacío')">
+Pedir
+</button>
+</div>
+
+<script>
+
+function pedir(producto){
+
+window.location.href=
+"https://wa.me/TUNUMERO?text=Hola quiero pedir "+producto
+
+}
+
+</script>
 
 </body>
+
 </html>
